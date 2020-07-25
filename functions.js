@@ -50,7 +50,7 @@ function load_mira_nohb()
 
 function load_JB()
 {	
-	confirmJailbreak = confirm("Bienvenue sur Jailbreak Mada, devrions-nous commencer?\nNote: Cliquez sur 'Annuler' si votre PS4 a déjà été Jailbreaké au démarrage!!")
+	confirmJailbreak = confirm("Bienvenue sur Jailbreak Mada, devrions-nous commencer?\nNote: Cliquez sur 'Annuler' si votre PS4 a déjà été Jailbreaké au démarrage!")
 	if(confirmJailbreak){
 		document.write(JB('c-code')+'<script>jb_finished();</scr'+'ipt>');
 	}
