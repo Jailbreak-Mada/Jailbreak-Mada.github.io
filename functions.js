@@ -2,7 +2,7 @@ var confirmJailbreak = true;
 function jb_finished()
 {
     if(main_ret == 179 || main_ret == 0){
-	alert("Félicitation Jailbreak réussis! L'étape suivante est de cliquer sur 'MIRA + HEN'");
+	alert("Félicitation Jailbreak réussis! L'étape suivante est de cliquer sur 'MIRA'\nNB: si votre jeu ne démarre pas avec MIRA, choisissez l'autre option");
     } else{
         alert("Echec du Jailbreak! Pas de Panic, redémarrer votre PS4 et réessayer.");
     }
@@ -50,7 +50,7 @@ function load_mira_nohb()
 
 function load_JB()
 {	
-	confirmJailbreak = confirm("Bienvenue sur Jailbreak Mada, devrions-nous commencer?\nNote: Cliquez sur 'Annuler' si votre PS4 a déjà été Jailbreaké au démarrage!!")
+	confirmJailbreak = confirm("Bienvenue sur Jailbreak Mada, devrions-nous commencer?\nNote: Cliquez sur 'Annuler' si votre PS4 a déjà été Jailbreaké au démarrage!")
 	if(confirmJailbreak){
 		document.write(JB('c-code')+'<script>jb_finished();</scr'+'ipt>');
 	}
